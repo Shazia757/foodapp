@@ -77,6 +77,12 @@ class CustomWidgets {
       ),
     );
   }
+
+  showConfirmationDialog(
+      {required String title,
+      required String message,
+      required Function() onConfirm,
+      required data}) {}
 }
 
 class CustomNavBar extends StatelessWidget {

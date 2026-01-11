@@ -66,6 +66,20 @@ class SignupScreen extends StatelessWidget {
                     decoration: InputDecoration(labelText: 'Pincode'),
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: TextField(
+                    // controller:,
+                    decoration: InputDecoration(labelText: 'Password'),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: TextField(
+                    // controller:,
+                    decoration: InputDecoration(labelText: 'Confirm Password'),
+                  ),
+                ),
                 // Obx(
                 //     () =>
                 //      c.isLoading.value

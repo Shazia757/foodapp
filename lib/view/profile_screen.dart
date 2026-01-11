@@ -9,7 +9,66 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.onPrimary,
       appBar: AppBar(),
-      body: Text('Profile'),
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'Full Name'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'Phone'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'Email'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'State'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'District'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'City'),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: TextField(
+              // controller:,
+              decoration: InputDecoration(labelText: 'Pincode'),
+            ),
+          ),
+          // Obx(
+          //     () =>
+          //      c.isLoading.value
+          //         ? CircularProgressIndicator()
+          //         :
+
+          // ),
+        ],
+      ),
       bottomNavigationBar: MediaQuery.of(context).size.width > 800
           ? null
           : CustomNavBar(currentIndex: 3),
